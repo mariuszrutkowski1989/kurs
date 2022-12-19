@@ -1,0 +1,21 @@
+section {
+    width: 270px;
+    height: 500px;
+    background-color: #808080;
+    
+}
+
+h1 {
+    color: white;
+    background-color: #808080;
+    margin: 4%;
+    font-size: 21px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #fea500;
+    margin: 4%;
+    margin-left: 20px;
+}
