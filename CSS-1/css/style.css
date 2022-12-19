@@ -1,0 +1,61 @@
+/* //Selektor znacznika */
+
+h2 {
+    color:darkblue;
+    font-size: 2.3em;
+}
+
+/* Selektor identyfikatora */
+
+#main-section {
+    background-color:black ;
+}
+
+/* Selektor klasy */
+
+.first-paragraph {
+    color: brown;
+}
+
+/* /Kaskadowosc/ */
+
+p{
+    background-color:black;
+}
+
+p {
+    background-color:black;
+    color: aliceblue;
+}
+
+/* Zlozone selektory */
+
+li, 
+p, 
+footer {
+    margin-bottom: 30px;
+}
+
+/* Przykład poza sekcją */
+
+section > a {
+    color:chartreuse;
+}
+
+/* Przykład wszystkich w danej sekcji */
+
+section a {
+    font-size: 2em;
+}
+
+/* Przykład zmiany w rodzeństwie h2-p */
+
+h2 + p {
+    line-height: 2;
+}
+
+/* Przykład zmiany w rodzeństwie po h2 */
+
+h2 ~ p {
+    font-size: 3em;
+}
