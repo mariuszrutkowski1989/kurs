@@ -1,0 +1,48 @@
+body {
+    background-color:black;
+}
+
+article {
+    background-color:slategray;
+}
+
+h1 {
+    color:white;
+    background-color: red;
+    font-size: larger;
+}
+
+#teaser {
+    color: darkturquoise;
+    background-color: blueviolet;
+}
+
+h2 {
+    color: white;
+    background-color:blue;
+}
+
+#first-paragraph {
+    color:antiquewhite;
+    background-color:darkgreen;
+}
+
+li:nth-child(1) {
+    color: azure;
+}
+
+li:nth-child(2) {
+    color: crimson;
+}
+
+li:nth-child(3) {
+    color: cyan;
+}
+
+li:nth-child(4) {
+    color: hotpink;
+}
+
+li:nth-child(5) {
+    color: cornflowerblue;
+}
