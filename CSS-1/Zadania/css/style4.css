@@ -1,0 +1,32 @@
+div {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(00, 00, 00);
+}
+
+section {
+    background-color: #f5f5dd;
+    width: 500px;
+    height: 700px;
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#square1 {
+    background-color: rgba(00, 00, 00,);
+}
+
+#square2 {
+    background-color: rgba(00, 00, 00, 0.75);
+}
+
+#square3 {
+    background-color: rgba(00, 00, 00, 0.5);
+}
+
+#square4 {
+    background-color: rgba(00, 00, 00, 0.25);
+}
+
+/* Sprawdzić: czemu automatyczne kopiowanie nie wybija mi kodu */
