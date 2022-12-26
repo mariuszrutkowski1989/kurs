@@ -1,0 +1,19 @@
+body {
+    background-color: grey;
+}
+
+p {
+    color: aliceblue;
+}
+
+h1 {
+    background-color: deeppink;
+}
+
+h3 {
+    background-color: darkturquoise;
+}
+
+h1 + h3 {
+    color: red;
+}
