@@ -6,4 +6,3 @@ let lastName = 'Rutkowski'
 
 // const lastName = 'Rutkowski'
 
-aksdoaksodkaso
