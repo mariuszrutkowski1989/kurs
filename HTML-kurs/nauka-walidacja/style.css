@@ -1,0 +1,24 @@
+a {
+    display: table;
+    margin-top: 5cm;
+    padding: 7.5em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+    border: 10px solid black;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: xx-large;
+    color: black;
+  }
+
+  a:hover {
+    transform:scale(2);
+  }
+/* 
+  .link {
+    font-size: xx-large;
+    font-weight: 800;
+  } */
