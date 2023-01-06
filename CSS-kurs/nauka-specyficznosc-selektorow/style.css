@@ -1,0 +1,23 @@
+/* Specyficzność selektorów */
+
+/* Najważniejszy !important */
+
+/* Kolejny liniowy zapis w html */
+
+#main-heading {
+    color: orange;
+}
+
+.heading {
+    color: blue;
+}
+
+h1 {
+    color: green !important;
+}
+
+* {
+    color: red;
+}
+
+/* Kalkulator selektorów: https://specificity.keegan.st/ */
