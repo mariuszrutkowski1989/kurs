@@ -1,0 +1,48 @@
+/* Selektory pseudoklas */
+
+.link:hover {
+    color: aquamarine;
+}
+
+input:focus {
+    background-color: blueviolet;
+}
+
+li:first-child {
+    color: blue;
+}
+
+li:last-child {
+    color: brown;
+}
+
+/* li:first-child:hover {
+    color: aliceblue;
+} DZIALA XD*/
+
+li:nth-child(5) {
+    color: green;
+}
+
+/* even - parzyste / odd - nieparzyste */
+
+li:nth-child(even) {
+    background-color: blueviolet;
+}
+
+/* co trzeci element, w tym przypadku start od pierwszego */
+
+li:nth-child(3n + 1) {
+    font-size: larger;
+}
+
+/* p:nth-child(1) {
+    background-color: blueviolet;
+}  Czemu to nie działa tak jak w przypadku list? */
+
+section p:nth-of-type(1) {
+    color: yellow;
+    background-color: black;
+}
+
+
