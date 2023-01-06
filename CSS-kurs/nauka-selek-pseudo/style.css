@@ -1,0 +1,25 @@
+/* Selektory pseudoelementów */
+
+#main-heading::before {
+    content: "*";
+    color: yellowgreen;
+}
+
+#main-heading::after {
+    content: "$";
+    color: brown;
+}
+
+#main-heading {
+    font-size: 16px;
+}
+
+div::before {
+    content: "***";
+    color: yellow;
+}
+
+div::after {
+    content: "Kotki";
+    color: yellowgreen;
+}
