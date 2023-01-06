@@ -1,0 +1,72 @@
+/* Selektor znacznika */
+h2 {
+    color: aliceblue;
+    font-size: medium;
+}
+
+/* Selektor id */
+
+#main-section {
+    background-color: aliceblue;
+}
+
+/* Selektor klasy */
+
+.first-paragraph {
+    color: aliceblue;
+}
+
+/* Kaskadowość */
+
+p {
+    background-color: violet;
+}
+
+p {
+    background-color: aqua;
+}
+
+/* Złożone selektory */
+
+li,
+p,
+footer {
+    margin-bottom: 10px;
+}
+
+/* Selektor bezpośredniego potomstwa */
+
+section > a {
+    color: aquamarine;
+}
+
+/* Selektor potomstwa całościowego */
+
+section a {
+    font-size: small;
+}
+
+/* Selektor bezpośredniego rodzeństwa */
+
+h2 + p {
+    line-height: 2;
+}
+
+/* Selektor rodzeństwa całościowego */
+
+h2 ~ p {
+    color: blue;
+}
+
+/* Selektor uniwersalny zwykle ma jedno zastosowanie - border-box */
+
+* {
+    color: black;
+    box-sizing: border-box;
+}
+
+/* Selekton 'tylko' - only / W tym przypadku tylko a z klasą link*/
+
+a.link {
+    background-color: beige;
+}
