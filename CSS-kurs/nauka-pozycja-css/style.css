@@ -1,0 +1,17 @@
+.relative {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.absolute {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+}
+
+/* position: fixed podąża za przeglądaniem strony */
+
+/* position: sticky zachowuje miejsce, przestaje sie scrollowac z pozostala czescia strony  */
+
+/* z-index: number - im wyzszy numer, tym wyzej pojawia sie dany element - poleca sie dodawac wyzsze, np. ciag  5-10-20-30 etc., aby zostawic sobie miejsce */
