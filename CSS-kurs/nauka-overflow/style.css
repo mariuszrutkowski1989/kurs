@@ -1,0 +1,12 @@
+section {
+    width: 300px;
+    height: 300px;
+    border: 2px orange solid;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+}
+
+/* p {
+    width: 400px;
+} */
