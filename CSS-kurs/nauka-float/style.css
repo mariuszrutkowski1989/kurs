@@ -1,6 +1,11 @@
 * {
     color: black;
     font-size: 1.2em;
+    text-align: center;
+}
+
+body {
+    position: relative;
 }
 
 img {
@@ -8,9 +13,9 @@ img {
 }
 
 .image {
-    float: right;
+    float:left;
 }
 
-.clear-float {
+/* .clear-float {
     clear: both;
-}
+} */
