@@ -1,0 +1,16 @@
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    cursor: pointer;
+    /* transition-duration: 3s;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-delay: 2s; */
+    transition: background-color 2s linear 1s, width 4s ease-in-out 0.5s;
+}
+
+.box:hover {
+    background-color: red;
+    width: 400px;
+}
