@@ -1,0 +1,68 @@
+/* Przed obejrzeniem filmu, proby wlasne /
+
+
+* {
+    background-color: aliceblue;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 5%;
+    cursor: pointer;
+    transition-duration: 3s;
+}
+
+
+.width:hover {
+
+    width: 300px;
+    background-color: black;
+
+}
+
+.height:hover {
+    height: 300px;
+    background-color: blue;
+}
+
+.both:hover {
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+} */
+
+.box {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 15px;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+
+.red:hover {
+    width: 300px;
+}
+
+.green {
+    background-color: green;
+}
+
+.green:hover {
+    height: 300px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blue:hover {
+    height: 300px;
+    width: 300px;
+}
