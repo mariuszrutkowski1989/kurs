@@ -30,7 +30,7 @@
    /* flex-basis: 25%; */
    /* order: 2; */
    /* flex-grow: 1;
-   /* flex-shrink: 1;   PONIZEJ flex grow/shrink/basis */
+   /* flex-shrink: 1;w   PONIZEJ flex grow/shrink/basis */
    flex: 1 1 25%;
 }
 

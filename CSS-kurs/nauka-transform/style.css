@@ -1,0 +1,49 @@
+.box {
+    border: 3px solid red;
+    width: 390px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    /* overflow: auto; */
+    
+}
+
+.rotate {
+    transform: rotateY(180deg);
+}
+
+.translate {
+    /* transform: translate(50px, 20px); */
+    /* transform: translateY(50px); */
+    transform: translate(-30%, 30%);
+    transform: scale(0.8);
+}
+
+.scale {
+    transform: scale(0.5);
+}
+
+@keyframes resize {
+    0% {
+        transform: scale(3);
+    }
+
+    50% {
+        transform: scale(0.1);
+    }
+
+    100% {
+        transform: scale(3);
+    }
+
+    /* 100% {
+        transform: scale(0.1);
+    } */
+}
+
+.animate {
+    animation-name: resize;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
