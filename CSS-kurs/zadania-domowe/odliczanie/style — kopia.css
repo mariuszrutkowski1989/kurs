@@ -1,0 +1,181 @@
+/* .countdown {
+    font-size: 80px;
+}
+
+#countdown-1 {
+    animation: countdown 1s;
+    animation-delay: 1s;
+}
+
+#countdown-2 {
+    animation: countdown 1s;
+    animation-delay: 2s;
+}
+
+#countdown-3 {
+    animation: countdown 1s;
+    animation-delay: 3s;
+}
+
+#countdown-4 {
+    animation: countdown 1s;
+    animation-delay: 4s;
+}
+
+#countdown-5 {
+    animation: countdown 1s;
+    animation-delay: 5s;
+}
+
+#countdown-6 {
+    animation: countdown 1s;
+    animation-delay: 6s;
+}
+
+#countdown-7 {
+    animation: countdown 1s;
+    animation-delay: 7s;
+}
+
+#countdown-8 {
+    animation: countdown 1s;
+    animation-delay: 8s;
+}
+
+#countdown-9 {
+    animation: countdown 1s;
+    animation-delay: 9s;
+}
+
+#countdown-10 {
+    animation: countdown 1s;
+    animation-delay: 10s;
+}
+
+#end-message {
+    animation: countdown 1s;
+    animation-delay: 11s;
+}
+
+@keyframes countdown {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+} */
+
+/* Wersja DRUGA */
+
+/* .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div .counter {
+    height: 100px;
+    width: 100px;
+    font-size: 72px;
+    animation-name: countdown;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes countdown {
+
+    0% {
+        content: "10";
+    }
+
+    10% {
+        content: "9";
+    }
+
+    20% {
+        content: "8";
+    }
+
+    30% {
+        content: "7";
+    }
+
+    40% {
+        content: "6";
+    }
+
+    50% {
+        content: "5";
+    }
+
+    60% {
+        content: "4";
+    }
+
+    70% {
+        content: "3";
+    }
+
+    80% {
+        content: "2";
+    }
+
+    90% {
+        content: "1";
+    }
+
+    100% {
+        content: "I love CSS :)";
+    }
+} */
+
+/* WERSJA trzecia sciagnieta zywcem */
+
+body {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    counter-reset: my-count 5;
+    animation: countdown 5s linear infinite;
+
+    &::after {
+        content: counter(my-count);
+        font-size: 30em;
+    }
+}
+
+@keyframes countdown {
+    0% {
+        background: hsl(0, 100%, 20%);
+    }
+
+    20% {
+        counter-increment: my-count -1;
+        background: hsl(90, 100%, 20%);
+    }
+
+    40% {
+        counter-increment: my-count -2;
+        background: hsl(180, 100%, 20%);
+    }
+
+    60% {
+        counter-increment: my-count -3;
+        background: hsl(270, 100%, 20%);
+    }
+
+    80% {
+        counter-increment: my-count -4;
+        background: hsl(360, 100%, 20%);
+    }
+
+    100% {
+        background: hsl(0, 100%, 20%);
+    }
+}

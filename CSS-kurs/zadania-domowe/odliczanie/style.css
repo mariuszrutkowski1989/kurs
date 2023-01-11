@@ -1,0 +1,134 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+
+.number {
+    animation: count 1s linear;
+    font-size: 4em;
+    color: white;
+    top: 30%;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+}
+
+.end-text {
+    font-size: 2em;
+    opacity: 0;
+    color: white;
+
+}
+
+.number:nth-child(10) {
+    animation: count 10s linear;
+}
+
+.number:nth-child(9) {
+    animation: count 9s linear;
+}
+
+.number:nth-child(8) {
+    animation: count 8s linear;
+}
+
+.number:nth-child(7) {
+    animation: count 7s linear;
+}
+
+.number:nth-child(6) {
+    animation: count 6s linear;
+}
+
+.number:nth-child(5) {
+    animation: count 5s linear;
+}
+
+.number:nth-child(4) {
+    animation: count 4s linear;
+}
+
+.number:nth-child(3) {
+    animation: count 3s linear;
+}
+
+.number:nth-child(2) {
+    animation: count 2s linear;
+}
+
+.number:nth-child(1) {
+    animation: count 1.5s linear;
+}
+
+.number:nth-child(11) ~ .end-text {
+    animation: count 11s linear;
+    animation-iteration-count: 1;
+    /* animation-fill-mode: forwards; */
+    opacity: 1;
+}
+
+
+@keyframes count {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+
+
+
+
+
+

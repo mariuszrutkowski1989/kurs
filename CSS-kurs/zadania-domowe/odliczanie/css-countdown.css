@@ -1,0 +1,54 @@
+/* (A) FONT & BOX SIZING */
+.cwrap, .cwrap * {
+  font-size: 2em;
+  font-family: impact, sans-serif;
+  box-sizing: border-box;
+}
+
+/* (B) OUTER WRAPPER & SLIDES - SAME DIMENSIONS */
+.cwrap, .cmove div {
+  width: 300px; height: 250px;
+}
+
+/* (C) OUTER WRAPPER */
+.cwrap {
+  color: #fff;
+  background: #000;
+  overflow: hidden; /* hide scrollbars */
+}
+
+/* (D) INNER WRAPPER */
+.cmove {
+  position: relative;
+  bottom: 0%;
+}
+
+/* (E) SLIDES - CENTERED */
+.cmove div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* (F) SLIDE ANIMATION */
+@keyframes countdown {
+  /* (F0) THE IDEA - USE KEYFRAMES TO SHIFT SLIDES *
+  0% { bottom: 0; } 20% { bottom: 100%; }
+  40% { bottom: 200%; } 60% { bottom: 300%; }
+  80% { bottom: 400%; } 100% { bottom: 500%; }
+
+  /* (F1) BUT THE ABOVE WILL SHIFT NON-STOP */
+  /* SO WE ADD PAUSES BETWEEN EACH SLIDE */
+  0% { bottom: 0; } 16% { bottom: 0; }
+  20% { bottom: 100%; } 36% { bottom: 100%; }
+  40% { bottom: 200%; } 56% { bottom: 200%; }
+  60% { bottom: 300%; } 76% { bottom: 300%; }
+  80% { bottom: 400%; } 96% { bottom: 400%; }
+  100% { bottom: 500%; }
+}
+
+/* (F2) 5 SLIDES = 5 SECONDS */
+.cmove {
+  animation: countdown linear 5s;
+  animation-fill-mode: forwards;
+}
