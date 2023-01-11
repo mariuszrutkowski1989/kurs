@@ -1,0 +1,129 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 1px white solid;
+    position: relative;
+    flex: 1;
+    
+}
+
+.circle {
+    background-color: red;
+    border: 1px white solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+} */
+
+/* Ja pierd */
+
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 1px white solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.circle {
+    background-color: red;
+    border: 1px white solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} */
+
+/* Próba 3 */
+
+/* Kolory */
+
+.red {
+    background-color: red;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.grey {
+    background-color: gray;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+}
+
+.orange {
+    background-color: orange;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.square {
+    /* background-color: black; */
+    height: 100px;
+    width: 100px;
+    border: 1px white solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
