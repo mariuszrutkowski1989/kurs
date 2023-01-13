@@ -69,17 +69,17 @@
 
 /* Wersja DRUGA */
 
-/* .container {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-}
-
-div .counter {
     height: 100px;
     width: 100px;
     font-size: 72px;
+}
+
+.counter::after {
+    content: "";
     animation-name: countdown;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -131,11 +131,11 @@ div .counter {
     100% {
         content: "I love CSS :)";
     }
-} */
+}
 
 /* WERSJA trzecia sciagnieta zywcem */
 
-body {
+/* body {
     color: #fff;
     display: flex;
     align-items: center;
@@ -178,4 +178,4 @@ body {
     100% {
         background: hsl(0, 100%, 20%);
     }
-}
+} */
