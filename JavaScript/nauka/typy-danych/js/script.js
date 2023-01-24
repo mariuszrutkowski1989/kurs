@@ -1,25 +1,24 @@
-// Typy jebane
+// Typy
 
 console.log("Typy danych");
 
 // Typy PRYMITYWNE
 
-// 1.typ number / zalezy mu tylko na numerkach.
+// 1.typ number 
 
 let numerPierwszy = 108;
 let numerDrugi = 100;
 
 console.log(numerPierwszy + numerDrugi)
 
-// 2.typ string / ciagi znakow / tekstowe - duzo gada, malo robi.
+// 2.typ string / ciagi znakow / tekstowe 
 
 let mojeImie = "Mariusz ";
 let mojeNazwisko = 'Rutkowski';
 
 console.log(mojeImie + mojeNazwisko);
 
-// 3. typ logiczny - true/false - konkretny typ, typ sie nie pitoli.
-
+// 3. typ logiczny - true/false 
 let jestJakis = true;
 
 /* if (jestJakis) {
@@ -37,7 +36,7 @@ if (jestJakis) {
     console.log(mainHeading);
 } */
 
-// 5. Typ undefined / nie-wiadomo-o-co-mu-chodzi. Niby jest, ale jakby nie wie co robi, po co to robi, dlaczego to robi. Jak mu nie powiesz co ma robic, bedzie jedynie stal i ladnie lub brzydko wygladal.
+// 5. Typ undefined / nie-wiadomo-o-co-mu-chodzi. 
 
 let typuUndefined; //zmienna tego typu zostala zadeklarowana, ale jeszcze nigdy nie zostala zdefiniowana
 
@@ -45,7 +44,7 @@ if (jestJakis) {
     console.log(typuUndefined);
 }
 
-//6. Typ Symbol - wyzsza szkola jazdy, tajemniczy typ z bogatym wnetrzem lub bagazem doswiadczen. Co do niego zycie wsadzilo, to tam bedzie - poznasz jak sie dopchasz.
+//6. Typ Symbol - 
 
 let symbol = Symbol(); //WAŻNE użycie wielkich/małych liter tworzy dwie rozne wartosci
 
