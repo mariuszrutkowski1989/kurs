@@ -1,0 +1,170 @@
+body {
+    background-color: rgba(255, 235, 205, 0.164);
+}
+
+/* Przycisk  */
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid rgb(255, 145, 0);
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: ease-out 1s;
+    /* transition-timing-function:cubic-bezier(0.19, 1, 0.22, 1); */
+    display: inline-block;
+    margin: auto;
+    background-color: transparent;
+}
+
+.btn:hover {
+    background-color: rgb(255, 145, 0);
+    color: white;
+}
+
+/* Główny tytuł */
+
+span {
+    color: darkorange;
+}
+
+.main-header {
+    
+    height: 70vh;
+    background-image: url(./AdobeStock_316235693.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header .main-header-content {
+    text-align: center;
+}
+
+.main-header .main-header-content h1 {
+    font-size: 4.2em;
+    text-transform: uppercase;
+    color: white;
+    margin: 0%;
+}
+
+.main-header .main-header-content p {
+    color: white;
+    font-size: 1.3em;
+    margin: 40px, 0;
+}
+
+.main-header .main-header-content p span {
+    color: white;
+}
+
+/* Gorne menu */
+
+
+section {
+    padding: 10px 0; 
+}
+
+.section-header .ksow {
+    margin-bottom: 0.5%;
+    display: flex;
+    align-items:center;
+    justify-content:end;
+    margin-right: 5%;
+
+}
+
+.ksow-img {
+    /* color: #333;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400; */
+    height: 5em;
+    width: auto;
+    cursor: pointer;
+    transition: linear 1s;
+    
+}
+
+.ksow-img:hover {
+    height: 5.3em;
+}
+
+/* footer */
+
+/* Contact section */
+
+/* .contact form {
+    max-width: 200px;
+    margin: 40px auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contact input[type=text],
+.contact input[type=email] {
+    flex-basis: 60%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.contact textarea {
+    flex-basis: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 100px;
+    overflow: scroll;
+} */
+
+/* Social media icons */
+
+.section-header .opis {
+    text-align: center;
+    text-shadow: #777;
+    overflow-x: auto;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-link {
+    font-size: 2.5em;
+    color: rgb(255, 145, 0);
+    transition: linear 1s;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.social-link:hover {
+    color: #777;
+}
+
+/* Stopka */
+
+.main-footer {
+    background-color: #f2f1ed;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+}
+
+

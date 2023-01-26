@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    line-height: 1.15;
+}
+
+body {
+    font-family: "Trirong", serif;
+    font-size: 10px;
+}
+
+/* linia */
+
+hr {
+    width: 12vw;
+    border: 1px solid whitesmoke;
+    border-bottom: 0;
+    /* margin-top: -2%; */
+}
+
+/* Stylowanie gory */
+
+.nav {
+    /* position: relative; */
+    margin: 5px 0px 1px calc((100% - 397px) * 0);
+    left: 20px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ksow {
+    text-align: left;
+    line-height: 1.41em;
+    font-size: 22px;
+}
+
+/* Stylowanie nagłówka  */
+
+.header {
+    height: 70vh;
+    background-image: url(../images/field.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2,
+.subtitle {
+    /* text-align: center; */
+    font-size: 5em;
+    display: block;
+}
+
+.subtitle {
+    font-size: 2em;
+    /* padding: 1.3em;
+    margin: auto, auto; */
+}
+
+/* Kontener dla flexboxow */
+
+.row {
+    margin: 0, auto;
+}
+
+.col {
+    padding: 50px;
+    height: 300px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.col.srodek {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    border-radius: 100%;
+    border-color: black;
+}
+
+
+
+

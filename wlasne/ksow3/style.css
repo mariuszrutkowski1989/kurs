@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+/* header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+} */
+
+
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+}
+
+/* Style the navigation menu */
+.container {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-image: url(./AdobeStock_316235693.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    /* padding: 160px; */
+    color:white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    
+}
+
+/* Style the list inside the menu */
+/* nav ul {
+    list-style-type: none;
+    padding: 0;
+} */
+
+/* Style the content */
+article {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #f1f1f1;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 150px;
+    margin-top: 150px;
+}
+
+p,
+hr {
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: #777;
+    width: 16em;
+    
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}

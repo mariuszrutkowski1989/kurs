@@ -25,17 +25,17 @@ function oppString(str2) {
 let oppositeString = oppString('Akademia108');
 console.log(oppositeString);
 
-// ZADANIE 3
+// // ZADANIE 3
 
-function calculateSumAndProduct(arr) {
-    let sum = 0;
-    let product = 1;
-    for (let i = 0; i < arr.length; i++) {
-      sum += arr[i];
-      product *= arr[i];
-    }
-    console.log("Sum: " + sum);
-    console.log("Product: " + product);
-  }
+// function calculateSumAndProduct(arr) {
+//     let sum = 0;
+//     let product = 1;
+//     for (let i = 0; i < arr.length; i++) {
+//       sum += arr[i];
+//       product *= arr[i];
+//     }
+//     console.log("Sum: " + sum);
+//     console.log("Product: " + product);
+//   }
   
-  calculateSumAndProduct([1, 2, 3, 4, 5, 6]);
+//   calculateSumAndProduct([1, 2, 3, 4, 5, 6]);
