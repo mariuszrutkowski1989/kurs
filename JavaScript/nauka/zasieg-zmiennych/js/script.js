@@ -1,10 +1,10 @@
 console.log("Sprawdzamy");
 
-imie = "Marek" //SLOWO KLUCZOWE - HOISTING. Działa ze zmienna var, nie dziala z let // Hoisting polega na wynoszeniu deklaracji zmiennych i funkcji „na górę” kodu (konkretnie na początek funkcji lub do zakresu zmiennych
+// imie = "Marek" //SLOWO KLUCZOWE - HOISTING. Działa ze zmienna var, nie dziala z let // Hoisting polega na wynoszeniu deklaracji zmiennych i funkcji „na górę” kodu (konkretnie na początek funkcji lub do zakresu zmiennych
 
-console.log(imie);
+// console.log(imie);
 
-var imie = "Mariusz";
+// var imie = "Mariusz";
 
 
 /* function wyswietlImie() {
@@ -29,7 +29,7 @@ console.log(wiek); */
 
 // Powyzej sytuacja troche inaczej wyglada, w warunku np. taka zmienna jak powyzszy wiek, bedzie sie pojawiala w konsoli. JEZELI JEDNAK przeniesiemy ten warunek do powyzszej funkcji, sytuacja sie zmieni:
 
-function wyswietlImie() {
+/* function wyswietlImie() {
     var imie = "Monika"; 
     console.log(imie);
     var nazwisko = "Rutkowski";
@@ -42,6 +42,26 @@ function wyswietlImie() {
 }
 
 wyswietlImie();
-
+ */
 
 /* Inaczej rzecz wygląda ze znienna let. ZMIENNA LET MA ZASIEG BLOKOWY - BLOK KODU ZAMKNIETY NAWIASAMI KLAMROWYMI. Zmienna var natomiast, ma zasieg FUNKCYJNY */
+
+
+let imie = 'Mariusz';
+
+// console.log(imie);
+
+function wyswietlImie() {
+    var imie = 70;
+    var nazwisko = 'Rutkowski';
+    console.log(imie);
+    console.log(nazwisko);
+
+    if (imie >= 0) {
+        var wiek = 30;
+    
+        console.log(wiek);
+    }
+}
+
+wyswietlImie()

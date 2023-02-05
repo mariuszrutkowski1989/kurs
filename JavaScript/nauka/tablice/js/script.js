@@ -4,7 +4,7 @@ let names = ['Mariusz', 'Ewelina', 'Ania'];
 
 let menNames = ['Robert', 'Bartek', 'Grzegorz'];
 
-let womenNames = new Array('Basia', 'Asia', 'Kasia'); // To inny sposob na stworzenie tablicy
+// let womenNames = new Array('Basia', 'Asia', 'Kasia'); // To inny sposob na stworzenie tablicy
 
 /* 
 names[1] = 'Basia';
