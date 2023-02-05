@@ -1,0 +1,17 @@
+body {
+    background-color: lightskyblue;
+}
+
+#container {
+	background-color: beige;
+	margin-bottom: 10px;
+}
+
+.even {
+	background-color: orange;
+}
+
+span {
+	padding: 0 20px;
+	border-right: 1px solid red;
+}

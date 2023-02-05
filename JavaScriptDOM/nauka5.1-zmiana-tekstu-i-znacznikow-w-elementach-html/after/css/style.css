@@ -1,0 +1,15 @@
+body {
+    background-color: lightskyblue;
+}
+
+h1 > span {
+    color: red;
+}
+
+.blueviolet {
+    color: blueviolet;
+}
+
+.first, .last {
+    text-transform: uppercase;
+}

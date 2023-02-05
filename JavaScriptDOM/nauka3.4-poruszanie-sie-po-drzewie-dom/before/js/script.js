@@ -1,0 +1,1 @@
+console.log("Poruszanie się po drzewie DOM");

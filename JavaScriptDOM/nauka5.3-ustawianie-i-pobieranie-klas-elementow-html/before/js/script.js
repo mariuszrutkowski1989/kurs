@@ -1,0 +1,1 @@
+console.log("Ustawianie i pobieranie klas (class) elementów HTML");

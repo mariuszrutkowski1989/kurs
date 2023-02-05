@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Document Object Model</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>DOM - Document Object Model</h1>
+
+    <div id="wrapper">
+
+        <form action="" class="search">
+            <input type="text" name="search" id="search" tabindex="1" placeholder="search" maxlength="10" />
+        </form>
+
+        <div class="break"></div>
+        
+        <p><strong>Keyborad events:</strong></p>
+
+        <div class="break"></div>
+
+        <ul>
+            <li><strong>keydown</strong> - ANY key is pressed (including CTRL, ALT, TAB, SHIFT, ESC etc.) - <strong>this event always fires FIRST</strong>. (Fired continously)</li>
+            <li><strong>keypress</strong> - ANY key (except CTRL, ALT, TAB, SHIFT, ESC etc.) is in pressed position. (Fired continously)</li>
+            <li><strong>keyup</strong> - ANY key is released</li>
+        </ul>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

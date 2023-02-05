@@ -1,0 +1,1 @@
+console.log("Zmiana tekstu i znaczników w elementach HTML");

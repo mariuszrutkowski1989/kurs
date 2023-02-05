@@ -1,0 +1,1 @@
+console.log("Dostęp do elementów DOM");
