@@ -4,10 +4,10 @@ let node = document;
 
 
 // Node.nodeType == ELEMENT_NODE (1)
-// node = document.documentElement;
-// node = document.head;
-// node = document.body;
-// node = document.getElementById('articles');
+node = document.documentElement;
+node = document.head;
+node = document.body;
+node = document.getElementById('articles');
 
 
 // Node.nodeType == ATTRIBUTE_NODE (2)

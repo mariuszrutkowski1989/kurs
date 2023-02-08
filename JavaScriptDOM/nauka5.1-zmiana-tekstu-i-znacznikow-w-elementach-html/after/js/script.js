@@ -6,6 +6,6 @@ console.log(h1.innerText);
 console.log(h1.innerHTML);
 console.log(h1.outerHTML);
 
-// h1.innerText = 'DOM - <span>Document Object Model</span>';
-// h1.innerHTML = 'DOM - <span>Document Object Model</span>';
-h1.outerHTML = 'DOM - <span>Document Object Model</span>';
+h1.innerText = 'DOM - document object model';
+h1.innerHTML = 'DOM - <span>Document cośtam</span>';
+h1.outerHTML = '<h1>DOM - <span>Document cośtam</span></h1>';
