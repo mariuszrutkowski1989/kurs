@@ -1,22 +1,22 @@
-// console.log('Dziala?');
+console.log('Dziala?');
 
 
-// let cities = ['Warsaw', 'Berlin', 'Paris', 'London', 'New York', 'Tokyo', 'Moscow'];
+let cities = ['Warsaw', 'Berlin', 'Paris', 'London', 'New York', 'Tokyo', 'Moscow'];
 
-// console.log(cities);
+console.log(cities);
 
-// let list = document.getElementById('city-list');
+let list = document.getElementById('city-list');
 
-// for (let i = 0; i < cities.length; i++) {
-//     let item = document.createElement('li');
-//     item.innerHTML = (i + 1) + '. ' + cities[i];
-//     item.classList.add('city');
-//     list.appendChild(item);
-// }
+for (let i = 0; i < cities.length; i++) {
+    let item = document.createElement('li');
+    item.innerHTML = (i + 1) + '. ' + cities[i];
+    item.classList.add('city');
+    list.appendChild(item);
+}
 
-// console.log(list);
+console.log(list);
 
-// console.log(document);
+console.log(document);
 
 
 //Dziaaaaalaaaaa
@@ -54,16 +54,16 @@
 
 //TODO://// Zadanie 2
 
-const button = document.querySelector("button");
+// const button = document.querySelector("button");
 
-const list = document.querySelector("#items");
+// const list = document.querySelector("#items");
 
-let counter = list.childElementCount + 1;
+// let counter = list.childElementCount + 1;
 
-button.addEventListener("click", function() {
-  const newItem = document.createElement("li");
-  newItem.className = "item";
-  newItem.innerHTML = "Item " + counter;
-  list.appendChild(newItem);
-  counter++;
-});
+// button.addEventListener("click", function() {
+//   const newItem = document.createElement("li");
+//   newItem.className = "item";
+//   newItem.innerHTML = "Item " + counter;
+//   list.appendChild(newItem);
+//   counter++;
+// });
