@@ -1,0 +1,233 @@
+.calculator {
+    background-color: #FFC0CB;
+    /* Pink background */
+    border-radius: 50px;
+    /* Rounded corners */
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    /* Drop shadow */
+    position: relative;
+    overflow: hidden;
+}
+
+.display {
+    background-color: #FFF;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 40px;
+    text-align: right;
+    animation: neon 1s linear infinite alternate;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px;
+    font-size: 30px;
+    color: #000;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    animation: rainbow 1s linear infinite;
+}
+
+/* Neon animation for display */
+@keyframes neon {
+    from {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #FF69B4, 0 0 80px #FF69B4, 0 0 90px #FF69B4, 0 0 100px #FF69B4, 0 0 150px #FF69B4;
+    }
+
+    to {
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #FF69B4, 0 0 80px #FF69B4, 0 0 90px #FF69B4, 0 0 100px #FF69B4, 0 0 150px #fff;
+    }
+}
+
+/* Rainbow animation for buttons
+@keyframes rainbow {
+    0% {
+        background-color: #F00;
+    }
+
+    20% {
+        background-color: #FF7F00;
+    }
+
+    40% {
+        background-color: #FF0;
+    }
+
+    60% {
+        background-color: #0F0;
+    }
+
+    80% {
+        background-color: #00F;
+    }
+
+    100% {
+        background-color: #4B0082;
+    }
+} */
+
+/* Crazy animation for calculator */
+@keyframes shake {
+    0% {
+        transform: rotate(0deg) translateX(0) translateY(0);
+    }
+
+    20% {
+        transform: rotate(20deg) translateX(20px) translateY(20px);
+    }
+
+    40% {
+        transform: rotate(-20deg) translateX(-20px) translateY(-20px);
+    }
+
+    60% {
+        transform: rotate(20deg) translateX(20px) translateY(20px);
+    }
+
+    80% {
+        transform: rotate(-20deg) translateX(-20px) translateY(-20px);
+    }
+
+    100% {
+        transform: rotate(0deg) translateX(0) translateY(0);
+    }
+}
+
+.calculator:hover .display {
+    animation: neon 0.5s linear infinite alternate-reverse;
+}
+
+.calculator:hover button {
+    animation: rainbow 0.5s linear infinite;
+}
+
+/* Some extra fun animations for buttons when clicked */
+
+button:active {
+    animation: none;
+    background-color: #000;
+    color: #FFF;
+    transform: scale(0.9);
+}
+
+button:active:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: radial-gradient(circle, #FFF 10%, transparent 10.01%);
+    background-size: 10px 10px;
+    background-position: center;
+    transform: scale(1.2);
+    animation: pulse 0.5s ease-out;
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.calculator {
+    width: 400px;
+    height: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ff00ff, #00ffff);
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(135deg, #00ffff, #ff00ff);
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+}
+
+button:active:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: radial-gradient(circle, #FFF 10%, transparent 10.01%);
+    background-size: 10px 10px;
+    background-position: center;
+    transform: scale(1.2);
+    animation: pulse 0.5s ease-out;
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.operator {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.equal {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    text-align: center;
+}

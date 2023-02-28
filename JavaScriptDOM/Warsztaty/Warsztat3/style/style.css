@@ -1,9 +1,8 @@
-/* Set a background color */
+
 body {
     background-color: #ffe8e8;
 }
 
-/* Style the form */
 #newsletter {
     background-color: #fff;
     border: 2px solid #f24c3d;
@@ -14,7 +13,6 @@ body {
     box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* Style the input fields */
 input[type="text"],
 input[type="email"],
 label {
@@ -25,7 +23,6 @@ label {
     font-family: "Arial", sans-serif;
 }
 
-/* Style the submit button */
 button[type="submit"] {
     background-color: #f24c3d;
     color: #fff;
@@ -41,7 +38,6 @@ button[type="submit"]:hover {
     background-color: #c12719;
 }
 
-/* Style the checkboxes */
 input[type="checkbox"] {
     display: inline-block;
     margin-right: 10px;
@@ -49,7 +45,6 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-/* Add a funny animation to the checkboxes */
 input[type="checkbox"]:hover {
     animation: shake 0.5s ease;
 }
@@ -84,7 +79,6 @@ input[type="checkbox"]:hover {
     }
 }
 
-/* Style the error messages */
 #errors {
     color: #c12719;
     font-size: 16px;
@@ -92,7 +86,6 @@ input[type="checkbox"]:hover {
     margin-bottom: 10px;
 }
 
-/* Add a fun background color to the labels */
 label {
     background-color: #f24c3d;
     color: #fff;
@@ -100,16 +93,14 @@ label {
     border-radius: 5px;
 }
 
-/* Add some padding to the form */
 #newsletter {
     padding: 30px;
 }
 
-/* Add an absurd background animation to the body */
 body {
     background-image: url("https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif");
     background-repeat: round;
-    background-size:25%;
+    background-size: 25%;
 }
 
 #newsletter {
@@ -227,3 +218,28 @@ input[type="checkbox"]:hover {
         transform: translate(5px, 5px);
     }
 }
+
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(30);
+        opacity: 0;
+    }
+}
+
+body.submitting {
+    animation: explode 0.5s ease forwards;
+}
+
+body {
+    transition: opacity 0.5s ease;
+}
+
+form.submitted {
+    display: none;
+}
+

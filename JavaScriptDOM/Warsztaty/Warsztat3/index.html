@@ -6,18 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zad-domowe</title>
 
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
-    <ul id="city-list"></ul>
+    <form action="" id="newsletter">
+
+        <ul id="errors"></ul>
+
+        <label for="name">Imię i nazwisko</label><br>
+        <input type="text" name="name" id="name" placeholder="Rafał Wilczur"><br>
+
+        <label for="email">Adres email</label><br>
+        <input type="email" name="email" id="email" placeholder="znachor@gov.pl"><br>
+
+        <input type="checkbox" name="agree-1" id="agree-1">
+        <label for="agree-1">Wyrażam zgodę na coś</label><br>
+
+        <input type="checkbox" name="agree-2" id="agree-2">
+        <label for="agree-2">Wyrażam zgodę na coś więcej</label><br>
+
+        <input type="checkbox" name="agree-all" id="agree-all">
+        <label for="agree-all">Wyrażam zgodę na WSZYSTKO</label><br><br>
+
+        <button type="submit" id="signup">Wyślij</button>
+
+    </form>
     
-    <ul id="items">
-        <li class="item">Item 1</li>
-        <li class="item">Item 2</li>
-        <li class="item">Item 3</li>
-        </ul>
-        <button>Add item</button>
 
     <script src="./js/script.js"></script>
 </body>

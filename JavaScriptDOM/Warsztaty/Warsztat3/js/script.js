@@ -1,69 +1,89 @@
-console.log('Dziala?');
+console.log('Ło Panie, kto to Panu tak...');
 
+let newsletterForm = document.getElementById('newsletter');
+let agreeAllChx = document.getElementById('agree-all');
 
-let cities = ['Warsaw', 'Berlin', 'Paris', 'London', 'New York', 'Tokyo', 'Moscow'];
+const validate = (event) => {
 
-console.log(cities);
+    let txtname = document.getElementById('name');
+    let txtEmail = document.getElementById('email');
+    let agree1 = document.getElementById('agree-1');
+    let errors = document.getElementById('errors');
 
-let list = document.getElementById('city-list');
+    errors.innerHTML = '';
 
-for (let i = 0; i < cities.length; i++) {
-    let item = document.createElement('li');
-    item.innerHTML = (i + 1) + '. ' + cities[i];
-    item.classList.add('city');
-    list.appendChild(item);
+    if (txtname.value.trim() === '') {
+        let liError = document.createElement('li');
+        liError.innerText = 'Wpisz imie i nazwisko';
+
+        errors.appendChild(liError);
+        alert('IMIE DAWAJ!');
+        // console.log(liError);
+    }
+
+    if (txtEmail.value.trim() === '') {
+        let liError = document.createElement('li');
+        liError.innerText = 'Wpisz adres e-mail';
+
+        errors.appendChild(liError);
+        alert('DAWAJ MAILA!');
+    }
+
+    if (!txtEmail.value.includes('@')) {
+        let liError = document.createElement('li');
+        liError.innerText = 'Adres musi zawierać znak "@"';
+
+        errors.appendChild(liError);
+        // alert('MAŁPĘ POSTAW W MAILU!');
+    }
+
+    if (!agree1.checked) {
+        let liError = document.createElement('li');
+        liError.innerText = 'Zaznacz pierwszą zgodę';
+
+        errors.appendChild(liError);
+        // alert('DAWAJ MAILA!');
+    }
+
+    if (errors.children.length > 0) {
+        event.preventDefault();
+    }
+
+    
+
+    // console.log(`validate()`);
+    // console.log(errors);
 }
 
-console.log(list);
+const agreeAll = (event) => {
+    let agree1 = document.getElementById('agree-1');
+    let agree2 = document.getElementById('agree-2');
+    let agree3 = document.getElementById('agree-all');
 
-console.log(document);
+    agree1.checked = event.target.checked;
+    agree2.checked = event.target.checked;
+    // agree3.checked = event.target.checked;
 
+    agree1.disabled = event.target.checked;
+    agree2.disabled = event.target.checked;
 
-//Dziaaaaalaaaaa
+    console.log(event.target.checked);
+}
 
-// FIXME:
+newsletterForm.addEventListener('submit', validate);
 
-// tablica cities z nazwami miast:
+newsletterForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    document.body.classList.add("submitting");
+    
+    form.classList.add("submitted");
+  });
 
-// let cities = ['Warsaw', 'Berlin', 'Paris', 'London', 'New York', 'Tokyo', 'Moscow'];
-
-// Metoda map() tworzy nową tablicę, w której każdy element jest wynikiem wywołania określonej funkcji na każdym elemencie tablicy wyjściowej. W naszym przypadku każdy element tablicy cities jest przekształcany w ciąg tekstowy z elementem listy, który zawiera numer miasta i nazwę miasta.
-
-// cities.map((city, index) => `<li class="city">${index + 1}. ${city}</li>`)
-
-// Metoda join('') łączy wszystkie elementy tablicy w jeden ciąg tekstowy, używając określonego separatora (w naszym przypadku pustego separatora).
-
-// Ostatecznie, używamy selektora, aby uzyskać dostęp do elementu listy i ustawić jego wnętrze na wynik działania map() i join():
-
-// document.querySelector('#city-list').innerHTML =
-
-// document.querySelector('#city-list').innerHTML = cities.map((city, index) => `<li class="city">${index + 1}. ${city}</li>`).join('');
-
-//TODO:
-
-// let cities = ['Warsaw', 'Berlin', 'Paris', 'London', 'New York', 'Tokyo', 'Moscow'];
-// let cityList = document.querySelector('#city-list');
-
-// for (let i = 0; i < cities.length; i++) {
-//   let listItem = document.createElement('li');
-//   listItem.className = 'city';
-//   listItem.textContent = `${i + 1}. ${cities[i]}`;
-//   cityList.appendChild(listItem);
-// }
+agreeAllChx.addEventListener('change', agreeAll)
 
 
-//TODO://// Zadanie 2
+// console.log(newsletterForm);
+// console.log(agreeAllChx);
 
-// const button = document.querySelector("button");
 
-// const list = document.querySelector("#items");
-
-// let counter = list.childElementCount + 1;
-
-// button.addEventListener("click", function() {
-//   const newItem = document.createElement("li");
-//   newItem.className = "item";
-//   newItem.innerHTML = "Item " + counter;
-//   list.appendChild(newItem);
-//   counter++;
-// });
