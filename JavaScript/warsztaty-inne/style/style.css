@@ -1,0 +1,11 @@
+header {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    font-family: Impact, sans-serif;
+}
+
+#countLabel {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
