@@ -13,7 +13,7 @@ $(document).ready(function () {
 
 
     $.get('https://jsonplaceholder.typicode.com/users/1')
-        .done(function (data) {
+        .done(function (data) { //metoda .done odpowiada za dane które przyjdą i nadają się do użycia
             console.log(data);
             console.log(data.name);
             console.log(data.email);

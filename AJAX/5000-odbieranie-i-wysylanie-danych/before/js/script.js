@@ -22,7 +22,7 @@ const getUser = () => {
     fetch(`https://akademia108.pl/api/ajax/get-random-user.php`, {
 
         // mode: 'no-cors', // ERRORS with no-cors, because only headers: HEAD, GET, POST are allowed - https://developer.mozilla.org/en-US/docs/Web/API/Request/mode
-        mode: 'cors', // it is DEFAULT VALUE
+        mode: 'cors', // it is DEFAULT VALUE - to domyslnie jest ustawione, nie wymaga zapisu
 
         method: 'GET', // allowed
         // method: 'POST', // allowed by CORS, but NOT allowed by SERVER
@@ -121,7 +121,7 @@ const createUser = () => {
             console.log(resJSON);
 
             if (!resJSON.errors) {
-                // formCreateUser.reset();
+                formCreateUser.reset(); //wykasowuje to wartości wpisywane
                 pMsg.innerText = resJSON.messages[0];
             }
 
