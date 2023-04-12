@@ -1,0 +1,8 @@
+.outer {
+    background-color: orange;
+    height: 600px;  
+}
+
+.inner {
+    background-color: blue;
+}
