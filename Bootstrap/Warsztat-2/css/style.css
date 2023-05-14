@@ -1,0 +1,50 @@
+header {
+    text-align: center;
+    padding: 1em;
+}
+
+.horizontal-line {
+    height: 1px;
+    background: black;
+    width: 30%;
+    opacity: 0.2;
+}
+
+.accordion {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.accordion-button {
+    background-color: rgba(220, 220, 220, 0.5);
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 400;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+/* Usunięcie niebieskiej ramki po wciśnięciu przycisku i zmiana tła na szare dla rozwiniętego przycisku */
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    outline: none;
+    background-color: rgba(220, 220, 220, 0.5);
+    box-shadow: none;
+}
+
+/* Dodanie podkreślenia po najechaniu na przycisk */
+.accordion-button:hover {
+    text-decoration: underline;
+}
+
+/* Wyśrodkowany tekst wewnątrz accordion-body */
+.accordion-body {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /* Pomarańczowy kolor tekstu */
+}

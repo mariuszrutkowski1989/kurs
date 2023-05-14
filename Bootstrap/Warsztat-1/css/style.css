@@ -1,0 +1,30 @@
+.icon-bg {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 100px;
+}
+
+.icon-color {
+    color: orange;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+}
+
+.horizontal-line {
+    height: 1px; 
+    background: black; 
+    width: 70%;
+    opacity: 0.2;
+}
