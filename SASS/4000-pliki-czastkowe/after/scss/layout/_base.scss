@@ -1,0 +1,20 @@
+p {
+    color: $base-font-color;
+    font-size: $base-font-size;
+}
+
+a {
+    color: $base-font-color;
+
+    &:hover {
+        color: blue;
+    }
+}
+
+header {
+    text-align: center;
+
+    p {
+        color: green;
+    }
+}

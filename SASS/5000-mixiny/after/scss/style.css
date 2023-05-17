@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  color: yellow;
+  font-size: 18px;
+}
+
+a {
+  color: yellow;
+}
+a:hover {
+  color: blue;
+}
+
+header {
+  text-align: center;
+}
+header p {
+  color: green;
+}
+
+.col-1-3 {
+  width: 33.33%;
+  padding: 20px;
+}
+
+.main-header {
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.main-section {
+  background-color: lightgrey;
+  padding: 30px 0;
+}
+.main-section .post {
+  background-color: lightgreen;
+}
+.main-section .post p {
+  font-weight: bold;
+}
+.main-section .post p.first-paragraph {
+  color: red;
+}
+
+.site-footer {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=style.css.map */

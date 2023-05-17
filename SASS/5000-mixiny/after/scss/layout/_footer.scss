@@ -1,0 +1,4 @@
+.site-footer {
+    @include section-padding;
+    @include flexbox;
+}

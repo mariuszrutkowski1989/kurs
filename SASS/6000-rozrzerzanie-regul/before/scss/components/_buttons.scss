@@ -1,0 +1,21 @@
+%btn {
+    border-radius: 15px;
+    color: white;
+    padding: 14px 20px;
+
+    &:hover {
+        color: black
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    background-color: red;
+    border: 1px solid green;
+}
+
+.btn-secondary {
+    @extend %btn;
+    background-color: blue;
+    border: 1px solid orange;
+}

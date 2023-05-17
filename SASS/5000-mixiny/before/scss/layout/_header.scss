@@ -1,0 +1,5 @@
+.main-header {
+    height: 60vh;
+    @include flexbox;
+    @include flex-allign-center(center, flex-end);
+}

@@ -1,0 +1,37 @@
+p {
+  color: gray;
+  font-size: 18px;
+}
+
+a {
+  color: gray;
+}
+
+a:hover {
+  color: blue;
+}
+
+header {
+  text-align: center;
+}
+
+header p {
+  color: green;
+}
+
+.main-section {
+  background-color: lightgrey;
+}
+
+.main-section .post {
+  background-color: lightgreen;
+}
+
+.main-section .post p {
+  font-weight: bold;
+}
+
+.main-section .post p.first-paragraph {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */

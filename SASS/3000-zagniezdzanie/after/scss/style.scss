@@ -1,0 +1,39 @@
+$base-font-color: gray;
+$base-font-size: 18px;
+
+p {
+    color: $base-font-color;
+    font-size: $base-font-size;
+}
+
+a {
+    color: $base-font-color;
+
+    &:hover {
+        color: blue;
+    }
+}
+
+header {
+    text-align: center;
+
+    p {
+        color: green;
+    }
+}
+
+.main-section {
+    background-color: lightgrey;
+    
+    .post {
+        background-color: lightgreen;
+
+        p {
+            font-weight: bold;
+
+            &.first-paragraph {
+                color: red;
+            }
+        }
+    }
+}

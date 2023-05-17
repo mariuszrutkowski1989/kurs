@@ -1,0 +1,20 @@
+@mixin section-padding {
+    padding:  30px 0;
+}
+
+
+@mixin flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@mixin col-1-3($width, $padding) {
+    width: $width;
+    padding: $padding;
+}
+
+@mixin flex-align-center($justify, $align) {
+    justify-content: $justify;
+    align-items: $align;
+}

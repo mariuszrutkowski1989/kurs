@@ -1,0 +1,16 @@
+.main-section {
+    background-color: lightgrey;
+    
+    .post {
+        background-color: lightgreen;
+
+        p {
+            font-weight: bold;
+
+            &.first-paragraph {
+                color: red;
+            }
+        }
+    }
+}
+
