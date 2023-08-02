@@ -1,0 +1,28 @@
+@mixin flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin flex-allign($justify, $align) {
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin menu-list {
+
+    list-style: none;
+    background-color: white;
+    text-transform: uppercase;
+    
+    .menu-item {
+        display: inline-block;
+        margin: 0 20px;
+        font-size: initial;
+
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+            font-weight: 700;
+        }
+    }
+}
