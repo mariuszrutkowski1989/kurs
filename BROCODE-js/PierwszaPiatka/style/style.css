@@ -1,0 +1,55 @@
+
+hr {
+    width: 50%;
+    height: 0.3px;
+    border-width: 0;
+    background-color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+h3 {
+    color: rgb(255, 157, 0);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.lekcje-1-5 {
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+    margin: 0;
+    width: 100%;
+
+    .klasa-1 {
+        background-color: black;
+        color: white;
+    };
+}
+
+.lekcje-1-5 div {
+    border: 0.1rem red;
+    padding: 15px 0;
+    margin: 15px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.lekcje-1-5 div:hover {
+    background-color: rgb(10, 0, 51);
+    /* font-size:xx-large; */
+    color: aliceblue;
+}
+
+.jebutny {
+    font-size: 100px;
+}
+
+

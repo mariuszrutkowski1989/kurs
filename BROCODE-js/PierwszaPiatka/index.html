@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables/Arithmetic expressions / User Input / Type conversion / Const</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+
+    <!-- ! SKRÓTY KOMENTARZY -->
+
+    <!-- todo -->
+    <!-- ! -->
+    <!-- ? -->
+    <!-- * -->
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- TODO: LEKCJE 1-5 -->
+
+    <section class="lekcje-1-5">
+        <div class="klasa-1">
+            <h1>Zmienne</h1>
+            <hr>
+            <!-- paragrafy o różnym ID -->
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+        </div>
+
+        <div class="klasa-2">
+            <h1>Znaki matematyczne / oblicz ilość uczniów w klasach</h1>
+            <hr>
+            <p id="p4"></p>
+            <p id="p5"></p>
+            <p id="p6"></p>
+            <p id="p7"></p>
+        </div>
+
+        <div class="klasa-1">
+            <h1>User input</h1>
+            <hr>
+            <form id="lesson-user-input">
+                <label id="moj-label">Twoja stara to?</label><br>
+                <input type="text" name="text" id="myText">
+                <button type="button" id="btn-submit">WYŚLIJ</button>
+            </form>
+        </div>
+
+        <div class="klasa-2">
+            <h1 id="wiek-twoj">Zmiana typu zmiennej</h1>
+            <hr>
+            <form id="lesson-user-input">
+                <label id="wiek-label">Ile masz lat?</label><br>
+                <input type="number" name="number" id="myWiek">
+                <button type="button" id="btn-wiek">WYŚLIJ</button>
+            </form>
+        </div>
+
+        <div class="klasa-1">
+            <h1>Stała</h1>
+            <hr>
+            <p id="p8"></p>
+        </div>
+
+        <div class="klasa-2">
+            <h1>Metody</h1>
+            <hr>
+            <p>Sprawdź sobie w main.js</p>
+        </div>
+
+        <div class="klasa-1">
+            <h1>Twierdzenie Pitagorasa</h1>
+            <hr><br>
+            <label id="trojkat-label-a">Podaj długość boku A</label>
+            <input type="number" name="number-a" id="trojkat-a"><br> <br>
+            <label id="trojkat-label-b">Podaj długość boku B</label>
+            <input type="number" name="number-b" id="trojkat-b"><br><br>
+            <button type="button-trojkat" id="button-trojkat">Oblicz C</button><br>
+            <h1 id="przeciwprostokatna"></h1>
+        </div>
+
+        <div class="klasa-2">
+            <h1>Rzuć kością</h1><br>
+            <hr>
+            <button id="rzuc-koscia">NO RZUC, DAWAJ</button>
+            <p id="wynik-rzutu"></p>
+        </div>
+
+        <div class="klasa-1">
+            <h1>Program liczący</h1><br>
+            <hr>
+            <label class="jebutny" id="cuntLabel">0</label><br>
+            <button id="decrease-btn">Mniej</button>
+            <button id="reset-btn">Reset</button>
+            <button id="increase-btn">Wincyj</button>
+        </div>
+
+        <div class="klasa-2">
+            <h1>Metody dotyczące napisów</h1>
+            <hr>
+            <p>Sprawdź w main.js</p>
+            <p>Tam także cięcie stringów</p>
+            <p>...oraz o tym, że metody można zapisywać w jednej linii</p>
+        </div>
+
+        <div class="klasa-1">
+            <h1>WARUNKI [IF]</h1>
+            <hr>
+            <p>Sprawdź w main.js / lekcja 14</p>
+        </div>
+
+        <div class="klasa-2">
+            <h1>Checkbox / sprawdzenie, czy zaznaczone</h1>
+            <hr><br>
+            <label for="myCheckBox">subscribe</label>
+            <input type="checkbox" id="myCheckBox"><br><br>
+            <label for="visaBtn">Visa</label>
+            <input type="radio" name="card" id="visaBtn">
+            <label for="mastercardBtn">MasterCard</label>
+            <input type="radio" name="card" id="mastercardBtn">
+            <label for="paypalBtn">PayPal</label>
+            <input type="radio" name="card" id="paypalBtn"><br>
+            <button id="myButton">submit</button>
+        </div>
+
+        <div class="klasa-1">
+            <h1>Switche</h1>
+            <hr>
+            <label for="wpisz-ocene">Jaką ocenę otrzymałeś? <br> <span>Podaj wynik w 0-100</span></label><br><br>
+            <input type="number" id='wpisz-ocene'>
+                <!-- <label for="six-btn">Szóstka</label>
+                <input type="radio" name="grade" id="six-btn"><br>
+                <label for="five-btn">Piątka</label>
+                <input type="radio" name="grade" id="five-btn"><br>
+                <label for="four-btn">Czwórka</label>
+                <input type="radio" name="grade" id="four-btn"><br>
+                <label for="three-btn">Trójka</label>
+                <input type="radio" name="grade" id="three-btn"><br>
+                <label for="two-btn">Dwójka</label>
+                <input type="radio" name="grade" id="two-btn"><br>
+                <label for="one-btn">Jedynka</label>
+                <input type="radio" name="grade" id="one-btn"><br> -->
+            <button id="gradeButton">submit</button><br>
+            <h2 id='ocena-koncowa'></h2>
+        </div>
+
+        <div class="klasa-2">
+            <h1>Operatory Panie</h1>
+            <hr>
+            <h3>Znak =</h3>
+            <p>Znak używany do przypisywania wartości do zmiennych. Na przykład, x = 5 oznacza, że zmienna x ma teraz wartość 5. Podobnie ze stringiem. x = '5', ma wartość '5'</p>
+            
+            <h3>Znak ==</h3>
+            <p>Znak używany do porównywania wartości dwóch zmiennych, ale czasem może prowadzić do nieoczekiwanych wyników. Działa on na zasadzie "czy te dwie wartości są sobie równe?", ale może automatycznie przekształcić typy danych, co może być mylące. Na przykład, 5 == "5" zwróci true, ponieważ znak == przekształcił napis na liczbę i kod zauważył, że liczbowo są sobie równe.</p>
+            
+            <h3>Znak ===</h3>
+            <p>Znak również używany do porównywania wartości, ale jest bardziej rygorystyczny. Działa na zasadzie "czy są sobie równe i są tego samego typu?". To oznacza, że porównanie 5 === "5" zwróci false, ponieważ nie tylko sprawdza, czy są sobie równe, ale także czy są tego samego typu (liczba i napis nie są tego samego typu).</p>
+            
+        </div>
+
+        <div class="klasa-1">
+            <h1>Czas na && (AND) oraz || (OR)</h1>
+            <hr>
+            <h3> Operator &&</h3>
+            <p>&& (AND, czyli I): <br> 
+            Ten operator służy do łączenia dwóch warunków i sprawdzenia, czy oba warunki są prawdziwe, czyli true. Jeśli oba warunki są spełnione, to wynik wyrażenia jest true, w przeciwnym razie wynik jest false.</p>
+            </p> Przykład: Jeśli masz warunek A i warunek B, to A && B jest prawdziwe tylko wtedy, gdy oba warunki A i B są prawdziwe.</p>
+            <h3>Operator ||</h3>
+            <p>|| (OR, czyli LUB): Ten operator służy do łączenia dwóch warunków i sprawdzenia, czy przynajmniej jeden z tych warunków jest prawdziwy (true).</p>
+                
+            <p>Jeśli chociaż jeden warunek jest spełniony, to wynik wyrażenia jest true, tylko wtedy, gdy oba warunki są fałszywe, wynik jest false.</p>
+            
+            <p>Na przykład: Jeśli masz warunek A lub warunek B, to A || B jest prawdziwe, jeśli przynajmniej jeden z warunków A lub B jest prawdziwy.</p>
+        </div>
+
+        <div class="klasa-2">
+            <h1>Nielogiczny ŁOPERATOR</h1>
+            <hr>
+            <p>Operator ! (wykrzyknik) w warunkach działa jak "logiczny odwracacz". Kiedy umieszczam ! przed wyrażeniem lub zmienną logiczną, zmienia ono swoją wartość logiczną na przeciwną.</p>
+
+            <p>Dla przykładu, jeśli mamy zmienną "sunny", która przyjmuje wartość true, to !sunny będzie miało wartość false, a jeśli sunny było false, to !sunny będzie miało wartość true.</p><br>
+            <p>main.js - 462</p>
+        </div>
+
+        <div class="klasa-1">
+            <h1>Pętle! [While]</h1>
+            <hr>
+        </div>
+
+        <div class="klasa-2">
+            <h1>Nielogiczny ŁOPERATOR</h1>
+            <hr>
+        </div>
+
+        <div class="klasa-2">
+            <h1>Nielogiczny ŁOPERATOR</h1>
+            <hr>
+        </div>
+
+        <div class="klasa-1">
+            <h1>Nielogiczny ŁOPERATOR</h1>
+            <hr>
+        </div>
+
+        <div class="klasa-2">
+            <h1>Nielogiczny ŁOPERATOR</h1>
+            <hr>
+        </div>
+
+        <div class="klasa-1">
+            <h1>Nielogiczny ŁOPERATOR</h1>
+            <hr>
+        </div>
+
+        <div class="klasa-2">
+            <h1>Nielogiczny ŁOPERATOR</h1>
+            <hr>
+        </div>
+
+        <div class="klasa-1">
+            <h1>Nielogiczny ŁOPERATOR</h1>
+            <hr>
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
